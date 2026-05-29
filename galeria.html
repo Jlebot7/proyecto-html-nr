@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundación Patitas Felices - Proyecto #1</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head> 
+
+<body>
+    <nav class="navbar">
+        <a class="logo" href="#hero">
+            <img class="logo-icon" src="../proyecto-html-nr/imagenes/logo.png" alt=""><p>Patitas Felices🐾</p>
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="index.html#conocenos">Servicios</a>
+            <a href="index.html#galeria">Galeria</a>
+            <a href="index.html#contacto">Contacto</a>
+        </div>
+    </nav>
+
+    <header id="hero" class="hero">
+        <div class="hero-content">
+            <div class="logo-area">
+                <i class="fa-solid fa-dog logo-icon"></i>
+                <h1>Patitas felices</h1>
+            </div>
+            <p class="slogan">Rescate, cuidado y segundas oportunidades para quienes más lo necesitan.</p>
+            <div class="hero-buttons">
+                <a href="#conocenos" class="btn btn-primary">Conócenos</a>
+                <a href="adopta.html" class="btn btn-secondary">Adopta</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="galeria" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Galería de Rescates y Eventos</h2>
+            <div class="mosaic-grid">
+                <div class="mosaic-item"><img
+                        src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&q=80&w=600"
+                        alt="Rescate 1"></div>
+                <div class="mosaic-item"><img
+                        src="https://images.unsplash.com/photo-1576201836106-db1758fd1c97?auto=format&fit=crop&q=80&w=600"
+                        alt="Rescate 2"></div>
+                <div class="mosaic-item"><img
+                        src="https://images.unsplash.com/photo-1596492784531-6e6eb5ea9993?auto=format&fit=crop&q=80&w=600"
+                        alt="Rescate 3"></div>
+                <div class="mosaic-item"><img
+                        src="https://images.unsplash.com/photo-1534361960057-19889db9621e?auto=format&fit=crop&q=80&w=600"
+                        alt="Rescate 4"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Formulario de Contacto / Solicitudes</h2>
+
+            <form action="#" method="POST" class="styled-form">
+
+                <div class="form-group">
+                    <label for="nombre">Nombre <span class="required">*</span></label>
+                    <input type="text" id="nombre" name="nombre" required placeholder=" " class="error-trigger">
+                    <span class="error-msg">Este campo es obligatorio</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="apellidos">Apellidos <span class="required">*</span></label>
+                    <input type="text" id="apellidos" name="apellidos" required placeholder=" ">
+                    <span class="error-msg">Este campo es obligatorio</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="ciudad">Ciudad <span class="required">*</span></label>
+                    <input type="text" id="ciudad" name="ciudad" required placeholder=" ">
+                    <span class="error-msg">Este campo es obligatorio</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo electrónico <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required placeholder=" ">
+                    <span class="error-msg">Introduce un correo electrónico válido</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono (Opcional)</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder=" ">
+                </div>
+
+                <div class="form-group">
+                    <label for="tipo">Tipo de consulta / envío <span class="required">*</span></label>
+                    <select id="tipo" name="tipo" required>
+                        <option value="">Selecciona una opción...</option>
+                        <option value="adopcion">Adopción</option>
+                        <option value="donacion">Donación</option>
+                        <option value="voluntariado">Voluntariado</option>
+                        <option value="informacion">Información general</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje <span class="required">*</span></label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required placeholder=" "></textarea>
+                    <span class="error-msg">Por favor escribe tu consulta</span>
+                </div>
+
+                <button type="submit" class="btn btn-submit">Enviar Formulario</button>
+            </form>
+
+            <div class="direct-contact">
+                <p><i class="fa-solid fa-envelope"></i> contacto@patitasfelices.com</p>
+                <p><i class="fa-solid fa-phone"></i> +57 (300) 123-4567</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h5>Fundación Patitas Felices</h5>
+                <p>&copy; 2026. Todos los derechos reservados.</p>
+            </div>
+            <div class="footer-contact">
+                <p>Contacto: info@patitasfelices.com</p>
+            </div>
+            <div class="footer-dev">
+                <p>Desarrollado por: <a href="#">By: Nicole Rodriguez</a></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -7,24 +7,18 @@
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
   </head>
 
   <body>
     <nav class="navbar">
       <a class="logo" href="#hero">
-        <img
-          class="logo-icon"
-          src="/imagenes/logos.avif"
-          alt=""
-        />
+        <img class="logo-icon" src="/imagenes/logos.avif" alt />
         <p>Patitas Felices🐾</p>
       </a>
       <div class="nav-links">
@@ -35,63 +29,53 @@
       </div>
     </nav>
 
-    <header id="hero" class="hero">
-      <div class="hero-content">
-        <div class="logo-area">
-          <i class="fa-solid fa-dog logo-icon"></i>
-          <h1 class="logo-title">Patitas felices</h1>
-        </div>
-        <p class="slogan">
-          Rescate, cuidado y segundas oportunidades para quienes más lo
-          necesitan.
-        </p>
-        <div class="hero-buttons">
-          <a href="#conocenos" class="btn btn-primary">Conócenos</a>
-          <a href="adopta.html" class="btn btn-secondary">Adopta</a>
+    <!-- HERO = CAROUSEL -->
+    <section id="hero" class="hero">
+      <div class="carousel-container">
+        <div class="carousel-track">
+          <div class="carousel-slide">
+            <img
+              src=""
+              alt="Perro feliz" />
+            <div class="carousel-caption">¡Cada rescate cuenta una nueva
+              historia!</div>
+          </div>
+
+          <div class="carousel-slide">
+            <img
+              src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&q=80&w=1200"
+              alt="Gato rescatado" />
+            <div class="carousel-caption">
+              Campañas de vacunación y cuidado integral.
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <img
+              src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=1200"
+              alt="Voluntarios" />
+            <div class="carousel-caption">
+              Únete a nuestro equipo de voluntarios hoy.
+            </div>
+          </div>
         </div>
       </div>
-    </header>
 
-    <section class="carousel-container">
-      <div class="carousel-track">
-        <div class="carousel-slide">
-          <img
-            src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=1200"
-            alt="Perro feliz"
-          />
-          <div class="carousel-caption">
-            ¡Cada rescate cuenta una nueva historia!
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <div class="logo-area">
+            <i class="fa-solid fa-dog logo-icon"></i>
+            <h1 class="logo-title">Patitas felices</h1>
           </div>
-        </div>
-        <div class="carousel-slide">
-          <img
-            src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&q=80&w=1200"
-            alt="Gato rescatado"
-          />
-          <div class="carousel-caption">
-            Campañas de vacunación y cuidado integral.
-          </div>
-        </div>
-        <div class="carousel-slide">
-          <img
-            src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=1200"
-            alt="Voluntarios" <div class="related-animals">
-              <h4>Otros compañeros que buscan un hogar:</h4>
-              <div class="related-track">
-                  <div class="related-item"><img
-                          src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&q=80&w=150"
-                          alt="Rel 1"><span>Luna</span></div>
-                  <div class="related-item"><img
-                          src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?auto=format&fit=crop&q=80&w=150"
-                          alt="Rel 2"><span>Simba</span></div>
-                  <div class="related-item"><img
-                          src="https://images.unsplash.com/photo-1574158622672-b43050e16af7?auto=format&fit=crop&q=80&w=150"
-                          alt="Rel 3"><span>Mia</span></div>
-              </div>
-          </div>
-          />
-          <div class="carousel-caption">
-            Únete a nuestro equipo de voluntarios hoy.
+
+          <p class="slogan">
+            Rescate, cuidado y segundas oportunidades para quienes más lo
+            necesitan.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#conocenos" class="btn btn-primary">Conócenos</a>
+            <a href="adopta.html" class="btn btn-secondary">Adopta</a>
           </div>
         </div>
       </div>
@@ -107,16 +91,13 @@
             vida merece una oportunidad digna y un hogar lleno de amor.
           </p>
           <div class="internal-links">
-            <a href="#catalogo"><i class="fa-solid fa-paw"></i> Adopta</a>
-            <a href="#contacto"
-              ><i class="fa-solid fa-hand-holding-heart"></i> Donaciones</a
-            >
-            <a href="#contacto"
-              ><i class="fa-solid fa-users"></i> Voluntariado</a
-            >
-            <a href="#contacto"
-              ><i class="fa-solid fa-envelope"></i> Contacto</a
-            >
+            <a href="adopta.html"><i class="fa-solid fa-paw"></i> Adopta</a>
+            <a href="contacto.html"><i
+                class="fa-solid fa-hand-holding-heart"></i> Donaciones</a>
+            <a href="contacto.html"><i class="fa-solid fa-users"></i>
+              Voluntariado</a>
+            <a href="contacto.html"><i class="fa-solid fa-envelope"></i>
+              Contacto</a>
           </div>
         </div>
 
@@ -146,6 +127,7 @@
             adopciones responsables en toda la comunidad.
           </p>
         </div>
+
         <div class="mv-block">
           <div class="mv-header">
             <i class="fa-solid fa-eye mv-icon"></i>
@@ -170,7 +152,9 @@
           <p>Contacto: info@patitasfelices.com</p>
         </div>
         <div class="footer-dev">
-          <p>Desarrollado por: <a href="#">Nicole Rodriguez</a></p>
+          <p>
+            Desarrollado por: <a href="#">Nicole Rodriguez</a>
+          </p>
         </div>
       </div>
     </footer>

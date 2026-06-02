@@ -18,52 +18,48 @@
   </head>
 
   <body>
-    <nav class="navbar">
-      <a class="logo" href="#hero">
-        <img
-          class="logo-icon"
-          src="/imagenes/logos.avif"
-          alt=""
-        />
+    <nav class="barra-navegacion">
+      <a class="logo" href="#inicio-hero">
+        <img class="icono-logo" src="imagenes/logos.avif" alt="" />
         <p>Patitas Felices🐾</p>
       </a>
-      <div class="nav-links">
-        <a href="index.html#hero">Inicio</a>
-        <a href="index.html#conocenos">Servicios</a>
+      <div class="enlaces-navegacion">
+        <a href="index.html#inicio-hero">Inicio</a>
+        <a href="index.html#conocenos-servicios">Servicios</a>
         <a href="galeria.html">Galeria</a>
         <a href="contacto.html">Contacto</a>
       </div>
     </nav>
 
-    <header id="hero" class="hero">
-      <div class="carousel-container hero-carousel">
-        <div class="carousel-track">
-          <div class="carousel-slide">
+    <header id="inicio-hero" class="hero">
+      <div class="carrusel-visor carrusel-hero">
+        <div class="pista-carrusel">
+          <div class="diapositiva-carrusel">
             <img
-              src="/imagenes/doberman.jpg"
+              src="imagenes/doberman.jpg"
               alt="Contacto con la fundación"
             />
-            <div class="carousel-caption">Escríbenos y te ayudamos</div>
+            <div class="subtitulo-carrusel">Escríbenos y te ayudamos</div>
           </div>
-          <div class="carousel-slide">
+          <div class="diapositiva-carrusel">
             <img
-              src="/imagenes/cachorro.png"
+              src="imagenes/cachorro.png"
               alt="Donaciones"
             />
-            <div class="carousel-caption">Donaciones que cambian vidas</div>
+            <div class="subtitulo-carrusel">Donaciones que cambian vidas</div>
           </div>
-          <div class="carousel-slide">
+          <div class="diapositiva-carrusel">
             <img
-              src="/imagenes/GATO_LUNA.jpg"
+              src="imagenes/GATO_LUNA.jpg"
               alt="Voluntariado"
             />
-            <div class="carousel-caption">Únete al equipo</div>
+            <div class="subtitulo-carrusel">Únete al equipo</div>
           </div>
         </div>
 
-        <div class="hero-text">
+        <div class="texto-hero">
           <h1>
-            <i class="fa-solid fa-dog logo-icon"></i> Patitas Felices
+            <i class="fa-solid fa-dog hero-dog-icon" aria-hidden="true"></i> Patitas Felices
           </h1>
           <p>
             Rescate, cuidado y segundas oportunidades para quienes más lo
@@ -73,14 +69,13 @@
       </div>
     </header>
 
-
-    <section id="contacto" class="contact-section">
+    <section id="contacto-formulario" class="seccion-contacto">
       <div class="container">
-        <h2 class="section-title">Formulario de Contacto / Solicitudes</h2>
+        <h2 class="titulo-seccion">Formulario de Contacto / Solicitudes</h2>
 
-        <form action="#" method="POST" class="styled-form">
-          <div class="form-group">
-            <label for="nombre">Nombre <span class="required">*</span></label>
+        <form action="#" method="POST" class="formulario-estilizado">
+          <div class="grupo-formulario">
+            <label for="nombre">Nombre <span class="requerido">*</span></label>
             <input
               type="text"
               id="nombre"
@@ -89,13 +84,13 @@
               placeholder=" "
               class="error-trigger"
             />
-            <span class="error-msg">Este campo es obligatorio</span>
+            <span class="mensaje-error">Este campo es obligatorio</span>
           </div>
 
-          <div class="form-group">
-            <label for="apellidos"
-              >Apellidos <span class="required">*</span></label
-            >
+          <div class="grupo-formulario">
+            <label for="apellidos">
+              Apellidos <span class="requerido">*</span>
+            </label>
             <input
               type="text"
               id="apellidos"
@@ -103,11 +98,11 @@
               required
               placeholder=" "
             />
-            <span class="error-msg">Este campo es obligatorio</span>
+            <span class="mensaje-error">Este campo es obligatorio</span>
           </div>
 
-          <div class="form-group">
-            <label for="ciudad">Ciudad <span class="required">*</span></label>
+          <div class="grupo-formulario">
+            <label for="ciudad">Ciudad <span class="requerido">*</span></label>
             <input
               type="text"
               id="ciudad"
@@ -115,13 +110,13 @@
               required
               placeholder=" "
             />
-            <span class="error-msg">Este campo es obligatorio</span>
+            <span class="mensaje-error">Este campo es obligatorio</span>
           </div>
 
-          <div class="form-group">
-            <label for="email"
-              >Correo electrónico <span class="required">*</span></label
-            >
+          <div class="grupo-formulario">
+            <label for="email">
+              Correo electrónico <span class="requerido">*</span>
+            </label>
             <input
               type="email"
               id="email"
@@ -129,20 +124,18 @@
               required
               placeholder=" "
             />
-            <span class="error-msg"
-              >Introduce un correo electrónico válido</span
-            >
+            <span class="mensaje-error">Introduce un correo electrónico válido</span>
           </div>
 
-          <div class="form-group">
+          <div class="grupo-formulario">
             <label for="telefono">Teléfono (Opcional)</label>
             <input type="tel" id="telefono" name="telefono" placeholder=" " />
           </div>
 
-          <div class="form-group">
-            <label for="tipo"
-              >Tipo de consulta / envío <span class="required">*</span></label
-            >
+          <div class="grupo-formulario">
+            <label for="tipo">
+              Tipo de consulta / envío <span class="requerido">*</span>
+            </label>
             <select id="tipo" name="tipo" required>
               <option value="">Selecciona una opción...</option>
               <option value="adopcion">Adopción</option>
@@ -153,8 +146,8 @@
             </select>
           </div>
 
-          <div class="form-group">
-            <label for="mensaje">Mensaje <span class="required">*</span></label>
+          <div class="grupo-formulario">
+            <label for="mensaje">Mensaje <span class="requerido">*</span></label>
             <textarea
               id="mensaje"
               name="mensaje"
@@ -162,20 +155,20 @@
               required
               placeholder=" "
             ></textarea>
-            <span class="error-msg">Por favor escribe tu consulta</span>
+            <span class="mensaje-error">Por favor escribe tu consulta</span>
           </div>
 
-          <button type="submit" class="btn btn-submit">
+          <button type="submit" class="boton boton-enviar">
             Enviar Formulario
           </button>
         </form>
 
-        <div class="direct-contact">
+        <div class="contacto-directo">
           <p>
             <i class="fa-solid fa-envelope"></i> contacto@patitasfelices.com
           </p>
           <p><i class="fa-solid fa-phone"></i> +57 (300) 123-4567</p>
-          <div class="social-links">
+          <div class="enlaces-sociales">
             <a href="#"><i class="fa-brands fa-facebook"></i></a>
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
             <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -184,19 +177,20 @@
       </div>
     </section>
 
-    <footer class="main-footer">
-      <div class="footer-container">
-        <div class="footer-brand">
+    <footer class="pie-principal">
+      <div class="contenedor-footer">
+        <div class="marca-footer">
           <h5>Fundación Patitas Felices</h5>
           <p>&copy; 2026. Todos los derechos reservados.</p>
         </div>
-        <div class="footer-contact">
+        <div class="contacto-footer">
           <p>Contacto: info@patitasfelices.com</p>
         </div>
-        <div class="footer-dev">
+        <div class="desarrollador-footer">
           <p>Desarrollado por: <a href="#">Nicole Rodriguez</a></p>
         </div>
       </div>
     </footer>
   </body>
 </html>
+

@@ -18,58 +18,58 @@
   </head>
 
   <body>
-    <nav class="navbar">
-      <a class="logo" href="#hero">
+    <nav class="barra-navegacion">
+      <a class="logo" href="#inicio-hero">
         <img
-          class="logo-icon"
+          class="icono-logo"
           src="imagenes/logos.avif"
           alt=""
         />
         <p>Patitas Felices🐾</p>
       </a>
-      <div class="nav-links">
-        <a href="#hero">Inicio</a>
-        <a href="#conocenos">Servicios</a>
+      <div class="enlaces-navegacion">
+        <a href="#inicio-hero">Inicio</a>
+        <a href="#conocenos-servicios">Servicios</a>
         <a href="galeria.html">Galeria</a>
         <a href="contacto.html">Contacto</a>
       </div>
     </nav>
 
-    <header id="hero" class="hero">
-      <div class="carousel-container hero-carousel">
-        <div class="carousel-track">
-          <div class="carousel-slide">
+    <header id="inicio-hero" class="hero">
+      <div class="carrusel-visor carrusel-hero">
+        <div class="pista-carrusel">
+          <div class="diapositiva-carrusel">
             <img
               src="imagenes/increible.jpg"
               alt="Perro feliz"
             />
-            <div class="carousel-caption">
+            <div class="subtitulo-carrusel">
               ¡Cada rescate cuenta una nueva historia!
             </div>
           </div>
-          <div class="carousel-slide">
+          <div class="diapositiva-carrusel">
             <img
               src="imagenes/feliz.jpg"
               alt="Gato rescatado"
             />
-            <div class="carousel-caption">
+            <div class="subtitulo-carrusel">
               Campañas de vacunación y cuidado integral.
             </div>
           </div>
-          <div class="carousel-slide">
+          <div class="diapositiva-carrusel">
             <img
               src="imagenes/mascotas.webp"
               alt="Voluntarios"
             />
-            <div class="carousel-caption">
+            <div class="subtitulo-carrusel">
               Únete a nuestro equipo de voluntarios hoy.
             </div>
           </div>
         </div>
 
-        <div class="hero-text">
+        <div class="texto-hero">
           <h1>
-            <i class="fa-solid fa-dog logo-icon"></i> Patitas Felices
+            <i class="fa-solid fa-dog hero-dog-icon" aria-hidden="true"></i> Patitas Felices
           </h1>
           <p>
             Rescate, rehabilitación y adopciones responsables para darle un hogar a cada huellita.
@@ -77,14 +77,10 @@
         </div>
       </div>
 
-      <div class="hero-overlay" aria-hidden="true">
-        
-      </div>
+      <div class="superposicion-hero" aria-hidden="true"></div>
     </header>
 
-
-
-    <section id="conocenos" class="featured-sections">
+    <section id="conocenos-servicios" class="featured-sections">
       <div class="container">
         <div class="summary-card">
           <h2>¿Qué hacemos?</h2>
@@ -94,14 +90,14 @@
             vida merece una oportunidad digna y un hogar lleno de amor.
           </p>
           <div class="internal-links">
-            <a href="#catalogo"><i class="fa-solid fa-paw"></i> Adopta</a>
-            <a href="#contacto"
+            <a href="#catalogo-adopcion"><i class="fa-solid fa-paw"></i> Adopta</a>
+            <a href="#contacto-formulario"
               ><i class="fa-solid fa-hand-holding-heart"></i> Donaciones</a
             >
-            <a href="#contacto"
+            <a href="#contacto-formulario"
               ><i class="fa-solid fa-users"></i> Voluntariado</a
             >
-            <a href="#contacto"
+            <a href="#contacto-formulario"
               ><i class="fa-solid fa-envelope"></i> Contacto</a
             >
           </div>
@@ -121,10 +117,10 @@
     </section>
 
     <section class="mission-vision">
-      <div class="container grid-2">
-        <div class="mv-block">
-          <div class="mv-header">
-            <i class="fa-solid fa-bullseye mv-icon"></i>
+      <div class="container rejilla-2">
+        <div class="bloque-mv">
+          <div class="encabezado-mv">
+            <i class="fa-solid fa-bullseye icono-mv"></i>
             <h3>Nuestra Misión</h3>
           </div>
           <p>
@@ -133,9 +129,9 @@
             adopciones responsables en toda la comunidad.
           </p>
         </div>
-        <div class="mv-block">
-          <div class="mv-header">
-            <i class="fa-solid fa-eye mv-icon"></i>
+        <div class="bloque-mv">
+          <div class="encabezado-mv">
+            <i class="fa-solid fa-eye icono-mv"></i>
             <h3>Nuestra Visión</h3>
           </div>
           <p>
@@ -147,19 +143,22 @@
       </div>
     </section>
 
-    <footer class="main-footer">
-      <div class="footer-container">
-        <div class="footer-brand">
+    <footer class="pie-principal">
+      <div class="contenedor-footer">
+        <div class="marca-footer">
           <h5>Fundación Patitas Felices</h5>
           <p>&copy; 2026. Todos los derechos reservados.</p>
         </div>
-        <div class="footer-contact">
+        <div class="contacto-footer">
           <p>Contacto: info@patitasfelices.com</p>
         </div>
-        <div class="footer-dev">
-          <p>Desarrollado por: <a href="#">Nicole Rodriguez</a></p>
+        <div class="desarrollador-footer">
+          <p>
+            Desarrollado por: <a href="#">Nicole Rodriguez</a>
+          </p>
         </div>
       </div>
     </footer>
   </body>
 </html>
+
